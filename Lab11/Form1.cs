@@ -350,37 +350,6 @@ namespace Lab11
             textBox1.AppendText(label + " " + string.Join(" ", array) + Environment.NewLine);
         }
 
-        private int[] GetArrayFromTextBox(System.Windows.Forms.TextBox textBox)
-        {
-            if (string.IsNullOrEmpty(textBox.Text))
-            {
-                MessageBox.Show("Помилка: Масив не може бути порожнім!", "Помилка",
-                    MessageBoxButtons.OK);
-                return null;
-            }
-
-            try
-            {
-                string[] lines = textBox.Text.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
-                List<int> integers = new List<int>();
-                foreach (string line in lines)
-                {
-                    string[] stringArray = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                    foreach (string str in stringArray)
-                    {
-                        integers.Add(int.Parse(str));
-                    }
-                }
-                return integers.ToArray();
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Помилка: Масив повинен містити лише цілі числа, розділені пробілами!",
-                    "Помилка", MessageBoxButtons.OK);
-                return null;
-            }
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
