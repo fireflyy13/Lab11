@@ -28,7 +28,7 @@ namespace Lab11
             int[] a = new int[length];
             for (int i = 0; i < a.Length; i++)
             {
-                a[i] = random.Next(1, 300);
+                a[i] = random.Next(1, 100000);
             }
             return a;
         }
@@ -40,7 +40,7 @@ namespace Lab11
             a[0] = random.Next(1, 300);
             for (int i = 1; i < a.Length; i++)
             {
-                a[i] = a[i - 1] + random.Next(1, 300);
+                a[i] = a[i - 1] + random.Next(1, 100000);
             }
 
             int[] b = Chaotic(length / 2);
@@ -57,7 +57,7 @@ namespace Lab11
             int[] a = new int[length];
             for (int i = 1; i < a.Length; i++)
             {
-                a[i] = random.Next(1, 300);
+                a[i] = random.Next(1, 100000);
                 if (a[i] % 2 == 0)
                 {
                     a[i] = a[i - 1];

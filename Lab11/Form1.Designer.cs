@@ -141,7 +141,7 @@ namespace Lab11
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(12, 436);
+            this.label2.Location = new System.Drawing.Point(12, 459);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(295, 82);
             this.label2.TabIndex = 18;
@@ -150,7 +150,7 @@ namespace Lab11
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(12, 525);
+            this.label3.Location = new System.Drawing.Point(12, 548);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(295, 86);
             this.label3.TabIndex = 19;
@@ -179,7 +179,7 @@ namespace Lab11
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label5.Location = new System.Drawing.Point(12, 611);
+            this.label5.Location = new System.Drawing.Point(12, 634);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(295, 86);
             this.label5.TabIndex = 23;
