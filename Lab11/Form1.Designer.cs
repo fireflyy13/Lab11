@@ -93,7 +93,7 @@ namespace Lab11
             this.RepeatQuickInt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.RepeatQuickInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.RepeatQuickInt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.RepeatQuickInt.Location = new System.Drawing.Point(341, 541);
+            this.RepeatQuickInt.Location = new System.Drawing.Point(456, 541);
             this.RepeatQuickInt.Name = "RepeatQuickInt";
             this.RepeatQuickInt.Size = new System.Drawing.Size(174, 55);
             this.RepeatQuickInt.TabIndex = 14;
@@ -107,7 +107,7 @@ namespace Lab11
             this.PartlySortedQuickInt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.PartlySortedQuickInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.PartlySortedQuickInt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.PartlySortedQuickInt.Location = new System.Drawing.Point(754, 541);
+            this.PartlySortedQuickInt.Location = new System.Drawing.Point(869, 541);
             this.PartlySortedQuickInt.Name = "PartlySortedQuickInt";
             this.PartlySortedQuickInt.Size = new System.Drawing.Size(174, 55);
             this.PartlySortedQuickInt.TabIndex = 13;
@@ -121,7 +121,7 @@ namespace Lab11
             this.textBox2.BackColor = System.Drawing.Color.White;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox2.Location = new System.Drawing.Point(58, 310);
+            this.textBox2.Location = new System.Drawing.Point(60, 324);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(197, 26);
             this.textBox2.TabIndex = 16;
@@ -131,7 +131,7 @@ namespace Lab11
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(567, 22);
+            this.label1.Location = new System.Drawing.Point(682, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 25);
             this.label1.TabIndex = 17;
@@ -158,17 +158,18 @@ namespace Lab11
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(68, 364);
+            this.label4.Location = new System.Drawing.Point(55, 370);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(187, 25);
+            this.label4.Size = new System.Drawing.Size(202, 99);
             this.label4.TabIndex = 21;
-            this.label4.Text = " Кількість скарбів   ";
+            this.label4.Text = " Загальна кількість\r\n скарбів у родинах";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(368, 72);
+            this.textBox1.Location = new System.Drawing.Point(483, 72);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -190,7 +191,7 @@ namespace Lab11
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(542, 541);
+            this.button1.Location = new System.Drawing.Point(657, 541);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(174, 55);
             this.button1.TabIndex = 24;
@@ -203,7 +204,7 @@ namespace Lab11
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(997, 747);
+            this.ClientSize = new System.Drawing.Size(1069, 766);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox1);
