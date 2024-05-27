@@ -270,7 +270,7 @@ namespace Lab11
 
             PrintArray(textBox1, arrayToSort, "Відсортований масив (Quick Sort):");
             timespan = stopwatch.Elapsed;
-            label3.Text = $"Час виконання Quick Sort в мс: " + (double)timespan.Ticks / 10000;
+            label5.Text = $"Час виконання Quick Sort в мс: " + (double)timespan.Ticks / 10000;
         }
 
         public void Merge_Click(object sender, EventArgs e)
@@ -295,7 +295,7 @@ namespace Lab11
 
             PrintArray(textBox1, arrayToSort, "Відсортований масив (MergeSort):");
             timespan = stopwatch.Elapsed;
-            label2.Text = $"Час виконання Merge Sort в мс: " + (double)timespan.Ticks / 10000;
+            label3.Text = $"Час виконання Merge Sort в мс: " + (double)timespan.Ticks / 10000;
         }
 
         public void Heap_Click(object sender, EventArgs e)
