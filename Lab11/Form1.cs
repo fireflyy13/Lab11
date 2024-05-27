@@ -66,30 +66,6 @@ namespace Lab11
             return a;
         }
 
-        public void BubbleSort(int[] a)
-        {
-            int temp;
-            bool swapped;
-            for (int i = 0; i < a.Length - 1; i++)
-            {
-                swapped = false;
-                for (int j = 0; j < a.Length - i - 1; j++)
-                {
-                    if (a[j] > a[j + 1])
-                    {
-                        temp = a[j];
-                        a[j] = a[j + 1];
-                        a[j + 1] = temp;
-                        swapped = true;
-                    }
-                }
-                if (!swapped)
-                {
-                    break;
-                }
-            }
-        }
-
         public static void Swap(int[] a, int i, int j)
         {
             int temp = a[i];
@@ -99,7 +75,8 @@ namespace Lab11
 
         public static void SortByMerge(int[] a, int left, int right)
         {
-            if (left < right)
+            if (left < right) // Перевіряємо, чи кількість елементів у масиві не є рівною 0 або 1,
+                              // в протилежному випадку об'єднуємо підмасиви, сортуючи
             {
                 int middle = left + (right - left) / 2;
                 SortByMerge(a, left, middle);
@@ -110,30 +87,31 @@ namespace Lab11
 
         public static void Merge(int[] a, int left, int middle, int right)
         {
-            int length1 = middle - left + 1;
-            int length2 = right - middle;
-            int[] left_a = new int[length1];
-            int[] right_a = new int[length2];
+            int length1 = middle - left + 1; // Довжина лівого підмасиву
+            int length2 = right - middle; // Довжина правого підмасиву
+            int[] left_a = new int[length1]; // Лівий підмасив
+            int[] right_a = new int[length2]; // Правий підмасив
 
             int i, j;
+
             for (i = 0; i < length1; i++)
             {
-                left_a[i] = a[left + i];
+                left_a[i] = a[left + i]; // Копіюємо знаечння в тимч. лівий підмасив
             }
 
             for (i = 0; i < length2; i++)
             {
-                right_a[i] = a[middle + 1 + i];
+                right_a[i] = a[middle + 1 + i]; // Копіюємо значення в тимч. правий підмасив
             }
 
             int k = left;
             i = 0;
             j = 0;
-            while (i < length1 && j < length2)
+            while (i < length1 && j < length2) // Працює доти, доки в обох підмасивах залишаються елементи
             {
                 if (left_a[i] <= right_a[j])
                 {
-                    a[k] = left_a[i];
+                    a[k] = left_a[i];  // Зливаємо відсортовані підмасиви в один масив
                     i++;
                 }
                 else
@@ -144,7 +122,7 @@ namespace Lab11
                 k++;
             }
 
-            while (i < length1)
+            while (i < length1) // Оброблюємо залишкові елементи
             {
                 a[k] = left_a[i];
                 i++;
@@ -274,7 +252,7 @@ namespace Lab11
         {
             if (initialArray == null)
             {
-                MessageBox.Show("Будь ласка, згенеруйте масив перед сортуванням!", "Помилка", MessageBoxButtons.OK);
+                MessageBox.Show("Спочатку згенеруйте масив!", "Помилка", MessageBoxButtons.OK);
                 return;
             }
 
@@ -299,7 +277,7 @@ namespace Lab11
         {
             if (initialArray == null)
             {
-                MessageBox.Show("Будь ласка, згенеруйте масив перед сортуванням!", "Помилка", MessageBoxButtons.OK);
+                MessageBox.Show("Спочатку згенеруйте масив!", "Помилка", MessageBoxButtons.OK);
                 return;
             }
 
@@ -342,7 +320,7 @@ namespace Lab11
 
             PrintArray(textBox1, arrayToSort, "Відсортований масив (HeapSort):");
             timespan = stopwatch.Elapsed;
-            label4.Text = $"Час виконання Heap Sort в мс: " + (double)timespan.Ticks / 10000;
+            label2.Text = $"Час виконання Heap Sort в мс: " + (double)timespan.Ticks / 10000;
         }
 
         static void PrintArray(System.Windows.Forms.TextBox textBox1, int[] array, string label)
@@ -356,6 +334,11 @@ namespace Lab11
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

@@ -111,7 +111,7 @@ namespace Lab11
             this.PartlySortedQuickInt.Name = "PartlySortedQuickInt";
             this.PartlySortedQuickInt.Size = new System.Drawing.Size(174, 55);
             this.PartlySortedQuickInt.TabIndex = 13;
-            this.PartlySortedQuickInt.Text = "Сортування бульбашкою";
+            this.PartlySortedQuickInt.Text = "Швидке сортування";
             this.PartlySortedQuickInt.UseVisualStyleBackColor = false;
             this.PartlySortedQuickInt.Click += new System.EventHandler(this.Quick_Click);
             // 
@@ -146,6 +146,7 @@ namespace Lab11
             this.label2.Size = new System.Drawing.Size(295, 82);
             this.label2.TabIndex = 18;
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
